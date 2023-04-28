@@ -68,3 +68,16 @@ class Box{
         System.out.println("box1의 속성값 : " + box1.toString()); // 13번 box1의 속성값을 출력
     }
 }
+
+/* 10번 참조 변수 box1을 통하여 getVolume() 메소드를 호출하여 보자. 어떤 값이 반환되는가?
+답 : 1000000
+
+11번 System.out.println(box1); 하면 무엇이 출력되는가?
+답 : width=100, length=100, height=100
+Box 클래스에서 객체 자체를 호출하면
+Object 클래스의 toString() 함수를 재정의한 함수인
+Box 클래스의 toString() 함수가 자동 호출됨을 알 수 있다.
+
+13번 참조 변수 box2의 값을 box1에 대입한 후에 접근자를 통하여 box1의 속성값을 출력하
+여 보자. 무엇을 알 수 있는가?
+답 : box1의 값이 box2의 값으로 변경되었다. box1과 box2가 같은 객체를 가리킨다는 것을 알 수 있다. */
